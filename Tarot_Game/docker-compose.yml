@@ -1,0 +1,9 @@
+version: '3'
+
+services: 
+  tomcat:
+    image: tomcat:9.0-jdk13-openjdk-oracle
+    volumes: 
+      - ./WebContent:/usr/local/tomcat/webapps
+    ports: 
+      - 8080:8080
